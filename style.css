@@ -1,0 +1,171 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+  
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  /* Navigation Bar - Flexbox */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #646cff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Main Content - Grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    color: #666;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .nav-menu {
+      gap: 1rem;
+    }
+  
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .nav-brand {
+      margin-bottom: 1rem;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Dark/Light Mode */
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+  
+    .navbar {
+      background-color: #f9f9f9;
+    }
+  
+    .nav-brand, .nav-menu a {
+      color: #213547;
+    }
+  
+    .hero {
+      background-color: #e5e7eb;
+      color: #213547;
+    }
+  
+    .footer {
+      background-color: #f9f9f9;
+      color: #213547;
+    }
+  }

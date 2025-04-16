@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links an external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Layout</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <!-- Brand or logo section -->
+      <div class="nav-brand">Responsive CSS</div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main application container -->
+    <div id="app">
+      <header class="hero">
+        <h1>Welcome to Our Site</h1>
+        <p>Discover amazing content and services</p>
+      </header>
+
+      <!-- Main content area with a grid layout -->
+      <main class="grid-container" id="container">
+        <!-- Feature card 1 -->
+        <section class="card">
+          <h2>Feature 1</h2>
+          <p id="dynamicText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <!-- Feature card 2 -->
+        <section class="card">
+          <h2>Feature 2</h2>
+          <p id="dynamicText">Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </section>
+        <!-- Feature card 3 -->
+        <section class="card">
+          <h2>Feature 3</h2>
+          <p id="dynamicText">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        </section>
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="changeStyle()">Change Style</button>
+        <button onclick="toggleElement()">Add/Remove Element</button>
+      </main>
+      <script src="script.js"></script>
+
+      <!-- Footer section -->
+      <footer class="footer">
+        <!-- Copyright information -->
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
